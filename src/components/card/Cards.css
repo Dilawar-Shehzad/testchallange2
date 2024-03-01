@@ -1,0 +1,80 @@
+.mainContiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.mainTitleContiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  float: left;
+  margin-left: 10px;
+  align-self: center;
+  width: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #373636;
+}
+.sec-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.module-hading {
+  font: 1.3em sans-serif;
+  color: #ffffff;
+}
+
+.taskIteration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #010000;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.module {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.module-Title {
+  font-size: 18px;
+  color: #bdbdbd;
+}
+
+.circle-colr {
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+}
+
+.actionBtn_continer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+
+.lockStyle {
+  font-size: 18px;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+
+.addNewItem{
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import TestScreen from "./screen/MainTestScreen";
+import { useDispatch } from "react-redux";
+import { mainJsonFuntion } from "./redux/actions/Actions";
+import { dummyJson } from "./extras/dummyData";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(mainJsonFuntion(dummyJson));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TestScreen />
     </div>
   );
 }
